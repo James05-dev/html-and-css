@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+      }
+      nav {
+        margin: 20px 0;
+      }
+      nav a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+      }
+      section {
+        margin: 20px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background: #333;
+        color: #fff;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      form input,
+      form textarea {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      form input[type="submit"] {
+        background: #5cb85c;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      form input[type="submit"]:hover {
+        background: #4cae4c;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I am an educational management graduate with a passion for
+        integrating technology into learning. My goal is to create innovative
+        solutions that enhance educational experiences.
+      </p>
+      <video width="320" height="240" controls>
+        <source src="my_intro_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="work">
+      <h2>Work</h2>
+      <p>Here are some projects I've worked on:</p>
+      <ul>
+        <li>
+          Project 1: Developed an educational app for interactive learning.
+        </li>
+        <li>
+          Project 2: Conducted research on the impact of technology in
+          classrooms.
+        </li>
+        <li>Project 3: Organized workshops for teachers on digital tools.</li>
+      </ul>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Check out my professional experience in the table below:</p>
+      <table border="1" cellpadding="10">
+        <thead>
+          <tr>
+            <th>Position</th>
+            <th>Company</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Intern</td>
+            <td>XYZ Educational Solutions</td>
+            <td>June 2023 - August 2023</td>
+          </tr>
+          <tr>
+            <td>Research Assistant</td>
+            <td>ABC Research Institute</td>
+            <td>September 2022 - May 2023</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Send Message" />
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
